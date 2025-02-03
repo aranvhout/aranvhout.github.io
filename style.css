@@ -41,16 +41,29 @@ main {
     margin: 20px;
 }
 
-/* Research Interest Section Styling */
+/* Research Interests Section */
+.research-interests {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .research-interest {
-    position: relative;
-    color: white;
-    padding: 60px 20px;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px;
+    min-height: 200px;
+}
+
+.research-interest h2 {
+    margin-top: 10px;
 }
 
 /* Research Interest 1 */
@@ -66,23 +79,6 @@ main {
 /* Research Interest 3 */
 .research-interest-3 {
     background-image: url('images/research-interest-3.jpg');
-}
-
-/* Overlay Effect */
-.research-interest::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);  /* Black overlay with 50% transparency */
-    z-index: 1;
-}
-
-.research-interest h2, .research-interest p {
-    position: relative;
-    z-index: 2;
 }
 
 /* Footer Styling */
@@ -111,7 +107,11 @@ footer p {
         font-size: 16px;
     }
 
+    .research-interests {
+        flex-direction: column;
+    }
+
     .research-interest {
-        padding: 40px 20px;
+        margin: 10px 0;
     }
 }
