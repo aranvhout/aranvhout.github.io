@@ -1,32 +1,84 @@
-<!-- research.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Researcher</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>My Research</h1>
-        <p>Information about research projects and interests.</p>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="index.html">Researcher</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Research Section -->
+    <section class="container my-5">
+        <h1 class="text-center text-dark">Research</h1>
+        <p class="lead text-center text-muted">I am currently working on several research projects, with a primary focus on data-driven solutions in healthcare and technology. Below are some of my key projects:</p>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card border-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Open Matrices Project</h5>
+                        <p class="card-text text-muted">A project focused on improving data accessibility and usability for decision-making in various sectors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Big Data in Healthcare</h5>
+                        <p class="card-text text-muted">Exploring the use of big data in healthcare to improve patient outcomes and operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">AI in Medicine</h5>
+                        <p class="card-text text-muted">Investigating the role of AI in diagnostics and personalized medicine for more effective treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-muted text-center py-3 border-top">
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
+
+    <!-- Add Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,32 +1,68 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Researcher</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>About Me</h1>
-        <p>Details about your background, experience, and interests.</p>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="index.html">Researcher</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <h1 class="text-center text-dark">About Me</h1>
+        <p class="lead text-center text-muted">I am a researcher specializing in translational research, focusing on the application of scientific discoveries to real-world challenges. My goal is to bridge the gap between research and practical solutions.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3 class="text-dark">Background</h3>
+                <p class="text-muted">With a strong background in data science and healthcare innovation, I have a passion for leveraging technology to address complex issues in healthcare and research.</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-dark">Experience</h3>
+                <p class="text-muted">I have worked on various projects, including the Open Matrices Project, where we are working to improve the accessibility and usability of data for decision-makers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-muted text-center py-3 border-top">
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
+
+    <!-- Add Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
