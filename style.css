@@ -48,36 +48,61 @@ section {
     margin-top: 60px;
 }
 
+/* Add background images to the cards */
 .card {
     border: 1px solid #e0e0e0; /* Light border for a subtle look */
     border-radius: 8px;
+    background-size: cover; /* Ensures the background image covers the card */
+    background-position: center; /* Centers the background image */
+    color: #fff; /* White text color to contrast with the background */
+    height: 300px; /* Set height for cards to maintain consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+    padding: 20px;
+    text-align: center;
 }
 
 .card-title {
-    color: #343a40;
+    color: #fff; /* White text for the card title */
     font-weight: 600;
 }
 
 .card-text {
-    color: #6c757d;
+    color: #fff; /* White text for the card description */
 }
 
-/* Buttons */
-.btn-outline-dark {
-    border-color: #343a40;
-    color: #343a40;
-    font-weight: 600;
+/* Specific background images for each card */
+.card:nth-child(1) {
+    background-image: url('/images/research-interest-1.jpg');
 }
 
-.btn-outline-dark:hover {
-    background-color: #343a40;
-    color: #fff;
+.card:nth-child(2) {
+    background-image: url('/images/research-interest-2.jpg');
 }
 
-/* Footer Styling */
-footer {
-    background-color: #fff;
-    color: #6c757d;
-    padding: 20px 0;
-    border-top: 1px solid #e0e0e0;
+.card:nth-child(3) {
+    background-image: url('/images/research-interest-3.jpg');
 }
+
+/* Optional: Add a slight overlay to the background for better text visibility */
+.card {
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.card-body {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
