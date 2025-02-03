@@ -4,44 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Researcher</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Optional custom styles -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Researcher</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 text-primary">Welcome to My Research Page</h1>
+            <p class="lead">I’m [Your Name], a researcher specializing in translational research, using data to solve real-world problems. Currently working on the Open Matrices Project.</p>
+        </div>
     </header>
-    
-    <main>
-        <h1>Welcome to My Research Page</h1>
-        <p>Hi, I'm [Your Name], a researcher specializing in <strong>translational research</strong>, focusing on turning data into real-world applications. I'm currently working on the <strong>Open Matrices Project</strong>, where we explore innovative ways to use big data to solve critical issues in healthcare and technology.</p>
 
-        <section>
-            <h2>Research Interests</h2>
-            <p>My work explores the intersection of science, technology, and human impact, including:</p>
-            <ul>
-                <li>Translational Research: Applying lab discoveries to real-world solutions</li>
-                <li>Data Science & Machine Learning: Harnessing the power of large datasets</li>
-                <li>Big Data Solutions: Solving societal challenges through data</li>
-                <li>AI in Healthcare: Developing intelligent systems for better health outcomes</li>
-            </ul>
-        </section>
+    <!-- Research Interests Section -->
+    <section class="container my-5">
+        <h2 class="text-center text-primary">Research Interests</h2>
+        <p class="lead text-center">I am passionate about the intersection of technology and human-centered research. My work focuses on:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Translational Research</h5>
+                        <p class="card-text">Applying lab discoveries to real-world settings to improve lives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Big Data Solutions</h5>
+                        <p class="card-text">Using data to solve critical problems in healthcare, technology, and beyond.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">AI in Healthcare</h5>
+                        <p class="card-text">Developing AI-driven solutions for better health outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Current Projects</h2>
-            <p>I am currently involved in the <a href="research.html">Open Matrices Project</a>, working to make complex datasets more accessible and impactful for various industries. Through this project, we aim to provide actionable insights that can influence policy and innovation.</p>
-        </section>
-    </main>
-    
-    <footer>
+    <!-- Current Projects Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center text-primary">Current Projects</h2>
+            <p class="text-center">I am currently working on the <strong>Open Matrices Project</strong>, a project focused on improving data accessibility and helping decision-makers make data-driven decisions.</p>
+            <div class="text-center">
+                <a href="research.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
         <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
+
+    <!-- Add Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
