@@ -1,123 +1,83 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Header Styling */
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Soft light gray background */
+    color: #343a40; /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* Navigation Styling */
+nav {
+    padding: 15px 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #343a40; /* Dark text for links */
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #6c757d; /* Lighter text on hover */
+}
+
+/* Hero Section */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #f1f1f1; /* Light gray background */
+    padding: 60px 0;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+    color: #343a40; /* Dark text for main heading */
+    font-size: 3em;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-header nav ul li a:hover {
-    color: #4CAF50;
-}
-
-/* Main Section */
-main {
-    margin: 20px;
+header p {
+    color: #6c757d; /* Lighter text for paragraph */
+    font-size: 1.2em;
 }
 
 /* Research Interests Section */
-.research-interest {
-    position: relative;
-    color: white;
-    padding: 60px 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin-bottom: 20px;
+section {
+    margin-top: 60px;
+}
+
+.card {
+    border: 1px solid #e0e0e0; /* Light border for a subtle look */
     border-radius: 8px;
 }
 
-.research-interest h2 {
-    margin-top: 10px;
-    font-size: 2rem;
+.card-title {
+    color: #343a40;
+    font-weight: 600;
 }
 
-/* Research Interest 1 */
-.research-interest-1 {
-    background-image: url('images/research-interest-1.jpg');
+.card-text {
+    color: #6c757d;
 }
 
-/* Research Interest 2 */
-.research-interest-2 {
-    background-image: url('images/research-interest-2.jpg');
+/* Buttons */
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    font-weight: 600;
 }
 
-/* Research Interest 3 */
-.research-interest-3 {
-    background-image: url('images/research-interest-3.jpg');
-}
-
-/* Overlay Effect */
-.research-interest::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);  /* Black overlay with 40% transparency */
-    z-index: 1;
-}
-
-.research-interest h2, .research-interest p {
-    position: relative;
-    z-index: 2;
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-/* Footer Links Styling */
-footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    header nav ul li a {
-        font-size: 16px;
-    }
-
-    .research-interest {
-        padding: 40px 20px;
-    }
+    background-color: #fff;
+    color: #6c757d;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
 }
