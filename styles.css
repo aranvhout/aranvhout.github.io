@@ -2,13 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f8f9fa;
     color: #333;
 }
 
 header {
-    background: #005f73;
-    color: white;
+    background: #d6d6d6;
+    color: black;
     padding: 20px;
     text-align: center;
 }
@@ -24,14 +24,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #94d2bd;
+    color: #6c757d;
 }
 
 main {
@@ -43,11 +43,24 @@ main {
     border-radius: 8px;
 }
 
+.profile-pic {
+    display: block;
+    margin: 0px 30px 20px 20px; /* Adjusted top margin to move it higher */
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    float: left;
+}
+p.spacer {
+    min-height: 20px; /* Adjust this value to control the height */
+    margin: 0; /* Remove any default margin */
+}
+
 footer {
     text-align: center;
     padding: 10px;
-    background: #005f73;
-    color: white;
+    background: #d6d6d6;
+    color: black;
     position: relative;
     width: 100%;
     margin-top: 20px;
